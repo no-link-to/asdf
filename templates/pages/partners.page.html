@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block header %}
+    {% include 'partials/common/header.common.html' %}
+{% endblock %}
+
+{% load static %}
+
+{% block custom_css %}
+
+    <link rel="stylesheet" href="{% static "css/partners.css" %}">
+    <link rel="stylesheet" href="{% static "css/header.css" %}">
+
+{% endblock %}
+
+{% block main_content %}
+
+    <section class="hero">
+        <div class="hero--partners partners">
+            <div class="partners--item">
+                <div class="partner-wrapper" style="background: url('/static/img/grand-gift-background.png'); background-repeat: no-repeat; background-size: cover;">
+                    <img src="/static/img/grand-gift.svg" alt="grand gift" class="partners--item__img">
+                    <p class="partners--item__text">Есть немало способов выразить свое отношение к человеку. Подарок среди них – нечто особенное и, безусловно, приятное. Подарок подобен человеку. И как человеку свойственно выражать свои чувства посредством музыки, кисти или пера, так и подарку свойственно нести особый смысл, который лучше многих слов передает подарочная упаковка. Подарочная упаковка есть ничто иное, как зеркало наших отношений.</p>
+                </div>
+            </div>
+            <div class="partners--item">
+                <div class="partner-wrapper" style="background: url('/static/img/ihg-background.png'); background-repeat: no-repeat; background-size: cover;">
+                    <img src="/static/img/holiday-inn.png" alt="holliday inn" class="partners--item__img">
+                    <p class="partners--item__text">Пока мир адаптируется к изменившейся реальности и новым ожиданиям путешественников, мы переосмысливаем наш подход к чистоте, чтобы вы – наши гости –ощущали нашу заботу о вашем благополучии на протяжении всего проживания.</p>
+                </div>
+            </div>
+            <div class="partners--item">
+                <div class="partner-wrapper" style="background: url('/static/img/dunkin-donats-background.png'); background-repeat: no-repeat; background-size: cover;">
+                    <img src="/static/img/dunkin-donats.svg" alt="dunkin donats" class="partners--item__img">
+                    <p class="partners--item__text">Крупнейшая сеть кофеен для тех, кто без ума от кофе и аппетитных лакомств. Поклонникам сладкой жизни в «Dunkin’ Donuts» предложат выпить чашечку великолепного кофе или горячего шоколада, чая или коктейля. Вместе с ними можно заказать несколько соблазнительных пончиков — с кокосом или клубникой со сливками, с бананом, с малиной, вишней, заварным кремом. Кроме высокого качества блюд, «Dunkin’ Donuts» отличается прекрасным сервисом и демократичными ценами</p>
+                </div>
+            </div>
+            <div class="partners--item">
+                <div class="partner-wrapper" style="background: url('/static/img/nomia-background.png'); background-repeat: no-repeat; background-size: cover;">
+                    <img src="/static/img/nomia.svg" alt="nomia" class="partners--item__img">
+                    <p class="partners--item__text">Nomia позволяет вам создавать уникальные ПЭС (партнерские экосистемы) с проверенными поставщиками и коллегами в ресторанном бизнесе. Пакеты подключения. в месяцв год – дешевле.</p>
+                </div>
+            </div>
+            <div class="partners--item">
+                <div class="partner-wrapper"  style="background: url('/static/img/traectory-background.png'); background-repeat: no-repeat; background-size: cover;">
+                    <img src="/static/img/traectory.png" alt="" class="partners--item__img">
+                    <p class="partners--item__text">ООО «Траектория Логистики» – это надежная транспортная компания, осуществляющая грузоперевозки любой сложности с 2007 года. Годы работы позволили нам найти и усовершенствовать различные схемы логистики, обеспечивающие надежность и эффективность транспортировки.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

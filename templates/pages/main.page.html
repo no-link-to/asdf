@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block custom_css %}
+
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
+    <link rel="stylesheet" href="{% static "css/custom-grid.css" %}">
+
+{% endblock %}
+
+{% block main_content %}
+
+    <section class="hero">
+        <div class="hero-wrapper">
+            <div class="header">
+                <h1 class="header__logo">
+                    ICA Group
+                </h1>
+                <div class="header--nav">
+                    <a href="{% url 'main' %}" class="header--nav__link">Главная</a>
+                    <a href="{% url 'about' %}" class="header--nav__link">О нас</a>
+                    <a href="{% url 'contacts' %}" class="header--nav__link">Контакты</a>
+                </div>
+            </div>
+            <div class="hero-content">
+                <h2 class="hero-content__title">Наша компания предоставляет профессиональные юридические услуги для Вашего бизнеса</h2>
+                <h4 class="hero-content__description">Юридические услуги для бизнеса</h4>
+                <a href="{% url 'contacts' %}"class="hero-content__button">Оставить заявку</a>
+            </div>
+        </div>
+    </section>
+    <section class="practice">
+        <h2 class="practice__title">Основные практики</h2>
+        <div class="practice--items items">
+            <div class="items--block">
+                <img src="static/img/first-img.svg" alt="Арбитраж" class="items--block__img">
+                <p class="items--block__text">Арбитраж</p>
+            </div>
+            <div class="items--block items-reverse">
+                <img src="static/img/fourth-img.svg" alt="Интеллектуальная собственность и технологии" class="items--block__img">
+                <p class="items--block__text">Интеллектуальная собственность и технологии</p>
+            </div>
+            <div class="items--block">
+                <img src="static/img/second-img.svg" alt="Корпоративное право" class="items--block__img">
+                <p class="items--block__text">Корпоративное право</p>
+            </div>
+            <div class="items--block items-reverse">
+                <img src="static/img/fifth-img.svg" alt="Международная торговля" class="items--block__img">
+                <p class="items--block__text">Международная торговля</p>
+            </div>
+            <div class="items--block">
+                <img src="static/img/third-img.svg" alt="Коммерческая концессия (франчайзинг)" class="items--block__img">
+                <p class="items--block__text">Коммерческая концессия (франчайзинг)</p>
+            </div>
+            <div class="items--block items-reverse">
+                <img src="static/img/sixth-img.svg" alt="Трудовое право" class="items--block__img">
+                <p class="items--block__text">Трудовое право</p>
+            </div>
+        </div>
+    </section>
+    <section class="cases">
+        <h2 class="cases__title">Наши кейсы</h2>
+        <div class="cases--cases-blocks cases-blocks">
+            <div class="cases-blocks--case case">
+                <div class="case__line"></div>
+                <div class="case--content content">
+                    <div class="content--text-block case-first-text">
+                        <p class="content--text-block__text">Наш клиент, являясь клиентом банка, попал в процедуру банкротства банка. К нему был предъявлен иск об оспаривании его сделок, совершенных в течение месяца до введения временной администрации. Мы помогли клиенту минимизировать сумму требований, сбив заявленные конкурсным управляющим требования в 3 раза.</p>
+                    </div>
+                    <img src="static/img/first-cases.png" alt="" class="content__img">
+                </div>
+            </div>
+            <div class="cases-blocks--case case" style="margin-bottom: 270px;">
+                <div class="case__line"></div>
+                <div class="case--content content reverse">
+                    <div class="content--text-block case-second-text">
+                        <p class="content--text-block__text">На нашего клиента подали в суд по просроченной дебиторской задолженности по договору строительного подряда. Мы смогли находясь на этапе арбитражного разбирательства убедить контрагента заключить взаимовыгодное для клиента соглашение, чем минимизировали издержки нашего клиента и не позволили адвокатам противоположной стороны «раздуть» сумму требований и издержек. Впоследствии апелляционная и кассационная инстанции встали на нашу сторону.</p>
+                    </div>
+                    <img src="static/img/second-cases.png" alt="" class="content__img">
+                </div>
+            </div>
+            <div class="cases-blocks--case case">
+                <div class="case__line"></div>
+                <div class="case--content content">
+                    <div class="content--text-block case-third-text">
+                        <p class="content--text-block__text">На нашего клиента подали в суд по задолженности из договора переуступки прав и обязанностей. Первоначальная сделка была по приобретению оборудования, которое слишком быстро вышло из строя. Несмотря на то, что клиент своевременно не предпринял необходимых правильных юридических действий по решению этой проблемы и не «закрыл» сделку, мы подали встречный иск и выиграли дело.</p>
+                    </div>
+                    <img src="static/img/third-cases.png" alt="" class="content__img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <h2 class="partners__title">Наши партнеры</h2>
+        <div class="work__list grid">
+          <div class="work__item grid" style="background-image: url(static/img/grand-gift-little-background.png);">
+              <div class="card--content">
+                  <img src="static/img/grand-gift.svg" alt="" class="card--content__img">
+              </div>
+              <div class="work__overlay"></div>
+          </div>
+          <div class="work__item grid" style="background-image: url(static/img/holliday-inn-little-background.png)">
+              <div class="card--content">
+                  <img src="static/img/holiday-inn.png" alt="" class="card--content__img">
+              </div>
+              <div class="work__overlay"></div>
+          </div>
+          <div class="work__item grid" style="background-image: url(static/img/nomia-little-background.png)">
+              <div class="card--content">
+                  <img src="static/img/nomia.svg" alt="" class="card--content__img">
+              </div>
+              <div class="work__overlay"></div>
+          </div>
+          <div class="work__item grid" style="background-image: url(static/img/donuts-little-background.png)">
+              <div class="card--content">
+                  <img src="static/img/dunkin-donats.svg" alt="" class="card--content__img">
+              </div>
+              <div class="work__overlay"></div>
+          </div>
+          <div class="work__item grid" style="background-image: url(static/img/traectory-little-background.png)">
+              <div class="card--content">
+                  <img src="static/img/traectory.png" alt="" class="card--content__img">
+              </div>
+              <div class="work__overlay"></div>
+          </div>
+          <div class="work__item grid" style="background-image: url(static/img/other-little-background.png)">
+              <div class="card--content">
+                <a href="{% url 'partners' %}" class="card--content__text">Другие партнеры</a>
+              </div>
+              <div class="work__overlay"></div>
+          </div>
+        </div>
+    </section>
+
+{% endblock %}

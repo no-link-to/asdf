@@ -1,0 +1,105 @@
+.hero {
+  background: #1F3F55;
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners {
+  padding: 70px 12.5em;
+  margin: 0 40px;
+}
+
+.partners--item {
+  background: #03070A;
+  margin-bottom: 70px;
+}
+
+.partners--item__img {
+  width: 25%;
+  height: 60%;
+  margin-right: auto;
+}
+
+.partners--item__text {
+  line-height: 30px;
+  text-align: left;
+  font-size: 18px;
+  margin-left: auto;
+  width: 70%;
+}
+
+.partner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 30px;
+}
+
+@media screen and (max-width: 1500px) {
+  .partners {
+    padding: 60px 5.5em;
+  }
+  .partners--item {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .partners {
+    padding: 40px 2em;
+  }
+  .partners--item {
+    margin-bottom: 40px;
+  }
+  .partners--item__text {
+    line-height: 25px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .partner-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .partners--item {
+    margin-bottom: 70px;
+  }
+  .partners--item__img {
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+  .partners--item__text {
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin-right: auto;
+    width: 100%;
+  }
+}

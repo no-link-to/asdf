@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block custom_css %}
+
+    <link rel="stylesheet" href="{% static "css/contacts.css" %}">
+
+{% endblock %}
+
+{% block main_content %}
+
+    <section class="hero">
+        <div class="hero-wrapper">
+            <div class="header">
+                <h1 class="header__logo">
+                    ICA Group
+                </h1>
+                <div class="header--nav">
+                    <a href="{% url 'main' %}" class="header--nav__link">Главная</a>
+                    <a href="{% url 'about' %}" class="header--nav__link">О нас</a>
+                    <a href="{% url 'contacts' %}" class="header--nav__link">Контакты</a>
+                </div>
+            </div>
+            <div class="hero__title">
+                <p>Контакты</p>
+            </div>
+            <div class="hero-form">
+                <p class="hero-form__title">Оставьте заявку</p>
+                <p class="hero-form__text">Наши операторы ответят на Ваши вопросы</p>
+                <form action="post" class="hero-form--form form">
+                    <div class="form--first-row">
+                        <div class="input-group">
+                            <label for="nameInput">Ваше имя</label>
+                            <input id="nameInput" type="text" class="form--first-row__input">
+                        </div>
+                        <div class="input-group">
+                            <label for="phoneInput">Ваш телефон</label>
+                            <input id="phoneInput" type="tel" class="form--first-row__input">
+                        </div>
+                        <div class="input-group">
+                            <label for="mailInput">Ваша почта</label>
+                            <input id="mailInput" type="email" class="form--first-row__input" style="margin-right: 0;">
+                        </div>
+                    </div>
+                    <div class="form--second-row">
+                        <div class="input-group">
+                            <label for="questionInput">Ваш вопрос</label>
+                            <textarea id="questionInput" class="form--second-row__input" rows="8" cols="46" name="text"></textarea>
+                        </div>
+                        <input id="sendButton" type="button" value="Отправить заявку" class="form--second-row__button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="find">
+        <h3 class="find__title">Найдите нас</h3>
+        <p class="find__text">
+            Корреспонденцию направляйте по адресу:
+            <br/>
+            <br/>
+            107392, г. Москва, ул. Хромова, д. 3, этаж 2, помещение 1, комната 7.
+            <br/>
+            <br/>
+            Часы
+            <br/>
+            Понедельник—пятница: 9:00–17:00
+            <br/>
+            Суббота и воскресенье: 11:00–15:00
+            <br/>
+            <br/>
+            В связи с распространением COVID-19 посещение офиса производится исключительно по предварительной записи.
+            <br/>
+            <br/>
+            Тел. для связи: +7 (495) 763 70 42.
+        </p>
+    </section>
+
+{% endblock %}
+
+{% block custom_js %}
+
+    <script src="{% static 'js/send-mail.js' %}"></script>
+
+{% endblock %}
