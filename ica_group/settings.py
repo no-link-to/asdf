@@ -25,7 +25,7 @@ SECRET_KEY = '&$e@gs#p#m$hnk(t5*!&8ar%p0^_6grd5bf3)mw3j%36tk)hgh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['icalegal.ru', 'www.icalegal.ru']
 
 
 # Application definition
